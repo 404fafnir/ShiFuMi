@@ -27,19 +27,25 @@ subpcs.run("clear")
 if gamemode == "1":
     ordinb = random.randint(1,3)
     Player1 = (input('\n'"Player 1 : what will you play ?"'\n'))
-    if Player1.lower() not in listshifoumi:
+    if Player1.lower() == "puit":
+        raise NameError("A cause de toi le jeux est cassé, BRAVO...")
+    elif Player1.lower() not in listshifoumi:
         raise NameError("wrong value")
 elif gamemode == "2":
 
     #Récupérations des valeurs de jeux via le joueur et test préliminaires de correspondances
     Player1 = (input("Player 1 : what will you play ?"'\n'))
-    if Player1.lower() not in listshifoumi:
+    if Player1.lower() == "puit":
+        raise NameError("A cause de toi le jeux est cassé, BRAVO...")
+    elif Player1.lower() not in listshifoumi:
         raise NameError("wrong value")
 
     subpcs.run("clear")
 
     Player2 = (input("Player 2 : what will you play ?"'\n'))
-    if Player2.lower() not in listshifoumi:
+    if Player2.lower() == "puit":
+        raise NameError("A cause de toi le jeux est cassé, BRAVO...")
+    elif Player2.lower() not in listshifoumi:
         raise NameError("wrong value")
 
     subpcs.run("clear")
